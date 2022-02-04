@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Transaction = () => {
+const Transaction = ({ text, amount }) => {
   return <div>
-      <h4>Single Transaction</h4>
+      <div>
+        {text}
+      </div>
+      <div>
+        {amount}
+      </div>
   </div>;
 };
 
