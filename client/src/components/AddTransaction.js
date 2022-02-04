@@ -20,6 +20,7 @@ const AddTransaction = () => {
       <input id="name" type="text" onChange={handleChange}/>
       <label htmlFor="amount">Amount</label>
       <input type="number" onChange={handleAmount}/>
+      <button type='submit'>Add Transaction</button>
     </form>
   </div>;
 };
