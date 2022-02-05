@@ -9,12 +9,15 @@ const TransactionList = () => {
 
   return <div>
     <h1>TransacionList </h1>
+    <ul>
+
     {transactions.map((item) => {
       return (
        <Transaction key={item.id} {...item}/>
 
       )
     })}
+    </ul>
   </div>;
 };
 
