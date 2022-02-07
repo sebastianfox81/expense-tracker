@@ -1,17 +1,20 @@
 import React, {useContext} from 'react';
-import { useGlobalContext } from './context'
+import { useGlobalContext } from './context';
+import { TableRow, TableCell } from '@material-ui/core'
 
-const Transaction = ({ text, amount, id }) => {
+const Transaction = ({ text, amount, id, date }) => {
 
   const { deleteTransaction } = useGlobalContext()
 
   const sign = amount < 0 ? '-' : '+'
-
+  
   return (
-    <li>
-    {text}<span>{sign}${Math.abs(amount)}</span>
-    <button onClick={() => deleteTransaction(id)}>X</button>
-    </li>
+    <TableRow>
+      <TableCell>{date}</TableCell>
+      <TableCell>{text}</TableCell>
+      <TableCell>{amount}</TableCell>
+    </TableRow>
+
 
 )
 };

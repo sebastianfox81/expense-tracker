@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <CssBaseline />
-      <Container maxWidth="xs">
+      <Container maxWidth="md">
       <Header />
       <Balance />
       <IncomeExpenses />

@@ -19,7 +19,7 @@ const Balance = () => {
         <Typography variant='h5'>Your Balance</Typography>
       </Grid>
       <Grid item>
-      <Typography variant="h3">${total}</Typography>
+      <Typography variant="h4">${total}</Typography>
       </Grid>
 
     </Grid>
